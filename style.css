@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Noto%20Sans%20Symbols%202:700|Noto%20Sans%20Symbols%202:400");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: 16px verdana, sans-serif;
+  font-size: 100%;
+}
+
+body {
+  max-height: 100vw;
+  min-width: 90vw;
+  width: 1080px;
+  margin: 1vh auto;
+  background-color: #020303;
+  font-family: "Noto Sans Symbols 2";
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "undefined";
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4.21rem;
+}
+
+h2 {
+  font-size: 3.158rem;
+}
+
+h3 {
+  font-size: 2.369rem;
+}
+
+h4 {
+  font-size: 1.777rem;
+}
+
+h5 {
+  font-size: 1.333rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+h1 {
+  color: #196B69;
+  margin: 1rem 1rem 1rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #333;
+  text-align: center;
+  background-color: aqua;
+}
+
+p {
+  margin: 1rem;
+  color: #0c0e10;
+}
+
+ul {
+  margin: 1rem 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

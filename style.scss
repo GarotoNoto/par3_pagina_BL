@@ -1,0 +1,190 @@
+//Imports
+@import url('https://fonts.googleapis.com/css?family=Noto%20Sans%20Symbols%202:700|Noto%20Sans%20Symbols%202:400');
+
+
+$light-text: #0c0e10;
+$light-background: #fbfcfd;
+$light-primary: #5d96b7;
+$light-secondary: #93c2dc;
+$light-accent: #6ab5df;
+$dark-text: #f0f2f4;
+$dark-background: #020303;
+$dark-primary: #4981a2;
+$dark-secondary: #23526c;
+$dark-accent: #1f6993;
+$dark-quoteBox: #5657b7;
+$dark-quoteBoxSoft: #9899de;
+$dark-quoteBoxAccent: #696adc;
+
+$font-primary: 'Noto Sans Symbols 2';
+
+//TODO: Agregar una función en JS que cambien de modo obscuro a modo claro
+
+/*
+
+    Summer/Dessert
+$themes: (
+ light: (
+   text: #141207,
+   background: #FEFAEB,
+   primary: #d5b43c,
+   secondary: #ecd584,
+   accent: #ecc94b,
+ ),
+ dark: (
+   text: #f8f7ec,
+   background: #130f01,
+   primary: #c2a129,
+   secondary: #7c6513,
+   accent: #b49113,
+ ),
+);
+
+
+    Soft blue, texturised?, more delicate
+$themes: (
+ light: (
+   text: #0c0c0e,
+   background: #f5f7fa,
+   primary: #4e68b1,
+   secondary: #98aae1,
+   accent: #6789e4,
+ ),
+ dark: (
+   text: #f1f1f3,
+   background: #05070a,
+   primary: #4e68b1,
+   secondary: #1e3067,
+   accent: #1b3c98,
+ ),
+);
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font: 16px verdana, sans-serif;
+    font-size: 100%;
+}
+
+body{
+    max-height: 100vw;
+    min-width: 90vw;
+    width: 100%;
+
+    font-family: 'Noto Sans Symbols 2';
+    font-weight: 400;
+}
+
+.container{
+  background-color: $dark-background;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'undefined';
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4.210rem; /* 67.36px */
+  color: $dark-text;
+  //margin: 1rem 1rem 1rem 0;
+  //padding-bottom: 1rem;
+  //border-bottom: 1px dashed #333;
+  text-align: center;
+  //background-color: aqua;
+}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+
+p{
+  margin: 1rem;
+  color: $dark-text;
+}
+
+/* ul{
+  margin: 1rem 2rem;
+} */
+
+
+#nav{
+  background-color: $dark-primary;
+  .nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    #H1_home{
+      cursor:pointer;
+    }
+    #nav_links{
+      list-style: none;
+      background-color: $dark-secondary;
+      
+      li{
+        display: inline-block;
+        padding-right: 10px;
+        padding-left: 10px;
+        a{
+          color: $dark-text;
+          transition: all 0.3s erase 0s;
+        }
+        a:hover{
+          color: $light-text;
+        }
+      }
+    }
+  }
+
+
+}
+
+#main{
+  //background-color: $light-background;
+  #main_container{
+    p{
+      color: $dark-text;
+    }
+  }
+
+}
+
+#footer{
+  display:inline-block;  //(?)
+  color: $dark-text;
+  #footer_container{
+
+    //FIXME: necesitan estar en fila micha y macha, pero no lo están
+    #contacto{
+      //display: -webkit-flex;
+      display: flex;
+      //-webkit-flex-direction: row;
+      flex-direction: row;
+      div, form{
+        //-webkit-flex: auto;
+        flex: auto;
+      }
+    }
+    #footer_p{
+      background-color: $dark-secondary;
+    }
+    #footer_lgn{
+      background-color: $dark-background;
+    }
+  }
+  
+}

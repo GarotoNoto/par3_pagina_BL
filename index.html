@@ -3,31 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.scss">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="path/to/plyr.css" />
     <title>Pagina Fin&aacute;l</title>
 </head>
 <body>
     <div class="container" id="nav">
-        <nav class="nav_container">
-            <h1>Bienvenidos</h1>
-            <li>
-                <ul></ul>
-                <ul></ul>
-                <ul></ul>
-            </li>
-        </nav>
+        <navbar class="nav_container">
+            <h1 id="H1_home">Flora</h1>
+            <ul id="nav_links">
+                <li><a href="">Home</a></li>
+                <li><a href="">Detalles</a></li>
+                <li><a href="">Info</a></li>
+            </ul>
+        </navbar>
         <header class="hero">
-
+            <!--<div class="plyr__video-embed" id="player">
+                <iframe
+                  src="https://www.youtube.com/embed/CP5k2gRabvc"
+                  
+                  allowfullscreen
+                  allowtransparency
+                  allow="autoplay"
+                ></iframe>
+              </div> -->
         </header>
     </div>
-    <div class="container">
-        <main class="main" id="main">
+    <div class="container" id="main">
+        <main class="main" id="main_container">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, accusantium maxime quod laborum atque impedit omnis ullam eligendi voluptatem exercitationem necessitatibus quisquam voluptate in eos reprehenderit dolor repellat earum! Consectetur.</p>
         </main>
     </div>
     <div class="container" id="footer">
         <footer class="footer_container">
-            <p id="footer_p">hecho con  </p>
+            <div class="contacto">
+                <div>
+                    <p>Cosa 1</p>
+                </div>
+                <form action="" class="contacto_form">
+                    <input type="text">
+                    <input type="text">
+                    <input type="button" value="Enviar">
+                </form>
+            </div>
+            <p id="footer_p">hecho con &lt;3 por GarotoNoto </p>
+            <p id="footer_lgn"><small>Notas legles</small></p>
         </footer>
     </div>
 </body>

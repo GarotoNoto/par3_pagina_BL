@@ -28,13 +28,14 @@ $font-primary: 'Noto Sans Symbols 2'
 html
     font: 16px verdana, sans-serif
     font-size: 100% /* 16px */
+    background-color: $light-background
 
 body
     max-height: 100vw
     min-width: 90vw
     width: 1080px
     margin: 1vh auto
-    background-color: $dark-background
+    background-color: $light-background
     font-family: $font-primary
     font-weight: 400
     
@@ -68,7 +69,6 @@ h1
     padding-bottom: 1rem
     border-bottom: 1px dashed #333
     text-align: center
-    background-color: aqua
 
 // TODO: add h2,h3,h4,h5,h6
 
@@ -81,5 +81,9 @@ p
 ul
     margin: 1rem 2rem
 
-
-
+#container
+    //margin: 10px
+    //padding: 10px
+    #nav_container
+      background-color: $dark-quoteBox
+      

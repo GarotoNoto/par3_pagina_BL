@@ -20,47 +20,6 @@ $font-primary: 'Noto Sans Symbols 2';
 
 //TODO: Agregar una función en JS que cambien de modo obscuro a modo claro
 
-/*
-
-    Summer/Dessert
-$themes: (
- light: (
-   text: #141207,
-   background: #FEFAEB,
-   primary: #d5b43c,
-   secondary: #ecd584,
-   accent: #ecc94b,
- ),
- dark: (
-   text: #f8f7ec,
-   background: #130f01,
-   primary: #c2a129,
-   secondary: #7c6513,
-   accent: #b49113,
- ),
-);
-
-
-    Soft blue, texturised?, more delicate
-$themes: (
- light: (
-   text: #0c0c0e,
-   background: #f5f7fa,
-   primary: #4e68b1,
-   secondary: #98aae1,
-   accent: #6789e4,
- ),
- dark: (
-   text: #f1f1f3,
-   background: #05070a,
-   primary: #4e68b1,
-   secondary: #1e3067,
-   accent: #1b3c98,
- ),
-);
-
-*/
-
 *{
     margin: 0;
     padding: 0;
@@ -82,7 +41,7 @@ body{
 }
 
 .container{
-  background-color: $dark-background;
+  background-color: $light-background;
 }
 
 h1, h2, h3, h4, h5 {
@@ -113,7 +72,7 @@ small {font-size: 0.750rem; /* 12px */}
 
 p{
   margin: 1rem;
-  color: $dark-text;
+  color: $light-text;
 }
 
 /* ul{
@@ -122,7 +81,7 @@ p{
 
 
 #nav{
-  background-color: $dark-primary;
+  background-color: $light-primary;
   .nav_container {
     display: flex;
     justify-content: space-between;
@@ -133,14 +92,14 @@ p{
     }
     #nav_links{
       list-style: none;
-      background-color: $dark-secondary;
+      background-color: $light-secondary;
       
       li{
         display: inline-block;
         padding-right: 10px;
         padding-left: 10px;
         a{
-          color: $dark-text;
+          color: $light-text;
           transition: all 0.3s erase 0s;
         }
         a:hover{
@@ -157,7 +116,7 @@ p{
   //background-color: $light-background;
   #main_container{
     p{
-      color: $dark-text;
+      color: $light-text;
     }
   }
 
@@ -165,7 +124,7 @@ p{
 
 #footer{
   display:inline-block;  //(?)
-  color: $dark-text;
+  color: $light-text;
   #footer_container{
 
     //FIXME: necesitan estar en fila micha y macha, pero no lo están
@@ -180,10 +139,10 @@ p{
       }
     }
     #footer_p{
-      background-color: $dark-secondary;
+      background-color: $light-secondary;
     }
     #footer_lgn{
-      background-color: $dark-background;
+      background-color: $light-background;
     }
   }
   

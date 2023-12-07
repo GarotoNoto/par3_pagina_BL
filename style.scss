@@ -41,7 +41,7 @@ body{
 }
 
 .container{
-  background-color: $light-background;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -115,6 +115,8 @@ p{
 #main{
   //background-color: $light-background;
   #main_container{
+    //FIXME: Hay que poner el gradiente bien
+    //background-image: linear-gradient(to bottom, #fffff0, #f4f0cb, #ece0a6, #e7d081, #e3be5c, #eeab55, #f79756, #fc825e, #f57488, #d876aa, #ac7dbd, #7c83bc);
     p{
       color: $light-text;
     }
@@ -122,28 +124,31 @@ p{
 
 }
 
-#footer{
-  display:inline-block;  //(?)
-  color: $light-text;
-  #footer_container{
+footer{
+  background-color: $light-accent;
+  #contacto{
+    background-color: $dark-quoteBox;
 
-    //FIXME: necesitan estar en fila micha y macha, pero no lo están
-    #contacto{
-      //display: -webkit-flex;
-      display: flex;
-      //-webkit-flex-direction: row;
-      flex-direction: row;
-      div, form{
-        //-webkit-flex: auto;
-        flex: auto;
-      }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    div{
+      background-color: $light-primary;
     }
-    #footer_p{
-      background-color: $light-secondary;
-    }
-    #footer_lgn{
+    form{
       background-color: $light-background;
+      border: 2px solid $dark-background;
+      border-radius: 7px;
     }
   }
-  
+  #footer_p{
+    background-color: #717728;
+  }
+  #footer_lgn{
+    background-color: $dark-background;
+    color: $dark-text;
+  }
 }
+

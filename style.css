@@ -1,44 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Noto%20Sans%20Symbols%202:700|Noto%20Sans%20Symbols%202:400");
-/*
-
-    Summer/Dessert
-$themes: (
- light: (
-   text: #141207,
-   background: #FEFAEB,
-   primary: #d5b43c,
-   secondary: #ecd584,
-   accent: #ecc94b,
- ),
- dark: (
-   text: #f8f7ec,
-   background: #130f01,
-   primary: #c2a129,
-   secondary: #7c6513,
-   accent: #b49113,
- ),
-);
-
-
-    Soft blue, texturised?, more delicate
-$themes: (
- light: (
-   text: #0c0c0e,
-   background: #f5f7fa,
-   primary: #4e68b1,
-   secondary: #98aae1,
-   accent: #6789e4,
- ),
- dark: (
-   text: #f1f1f3,
-   background: #05070a,
-   primary: #4e68b1,
-   secondary: #1e3067,
-   accent: #1b3c98,
- ),
-);
-
-*/
 * {
   margin: 0;
   padding: 0;
@@ -59,7 +19,7 @@ body {
 }
 
 .container {
-  background-color: #020303;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -95,14 +55,14 @@ small {
 
 p {
   margin: 1rem;
-  color: #f0f2f4;
+  color: #0c0e10;
 }
 
 /* ul{
   margin: 1rem 2rem;
 } */
 #nav {
-  background-color: #4981a2;
+  background-color: #5d96b7;
 }
 #nav .nav_container {
   display: flex;
@@ -115,7 +75,7 @@ p {
 }
 #nav .nav_container #nav_links {
   list-style: none;
-  background-color: #23526c;
+  background-color: #93c2dc;
 }
 #nav .nav_container #nav_links li {
   display: inline-block;
@@ -123,7 +83,7 @@ p {
   padding-left: 10px;
 }
 #nav .nav_container #nav_links li a {
-  color: #f0f2f4;
+  color: #0c0e10;
   transition: all 0.3s erase 0s;
 }
 #nav .nav_container #nav_links li a:hover {
@@ -131,25 +91,34 @@ p {
 }
 
 #main #main_container p {
-  color: #f0f2f4;
+  color: #0c0e10;
 }
 
-#footer {
-  display: inline-block;
-  color: #f0f2f4;
+footer {
+  background-color: #6ab5df;
 }
-#footer #footer_container #contacto {
+footer #contacto {
+  background-color: #5657b7;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
 }
-#footer #footer_container #contacto div, #footer #footer_container #contacto form {
-  flex: auto;
+footer #contacto div {
+  background-color: #5d96b7;
 }
-#footer #footer_container #footer_p {
-  background-color: #23526c;
+footer #contacto form {
+  background-color: #fbfcfd;
+  border: 2px solid #020303;
+  border-radius: 7px;
 }
-#footer #footer_container #footer_lgn {
+footer #footer_p {
+  background-color: #717728;
+}
+footer #footer_lgn {
   background-color: #020303;
+  color: #f0f2f4;
 }
 
 /*# sourceMappingURL=style.css.map */
